@@ -1,0 +1,41 @@
+.genderElem, .genderElemActive{
+    display: grid;
+    padding: 10px 0;
+    place-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    height: 80px;
+    border-radius: 16px;
+    gap: 8px;
+    cursor: pointer;
+}
+.genderElem{
+    border: 1px solid #C1C1C1;
+}
+.genderElem:hover{
+    opacity: .8;
+}
+.genderElemActive{
+    border: 1px solid #3C9C41;
+}
+.genderElemActive p{
+    color: #3C9C41;
+}
+.genderElem p{
+    color: #5B5B5B;
+}
+.genderElem p, .genderElemActive p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+.genderElemActive img{
+    filter: invert(.5) sepia(1) saturate(57) hue-rotate(445deg);
+}
+@media screen and (min-width: 350px) {
+    .genderElem, .genderElemActive{
+       height: 100px;
+    }
+  }

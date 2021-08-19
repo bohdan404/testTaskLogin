@@ -1,0 +1,86 @@
+.inputField input{
+    border: 1px solid #C1C1C1;
+    box-sizing: border-box;
+    border-radius: 16px;
+    height: 50px;
+    background: #fff;
+
+    width: 100%;
+    padding: 0 17px;
+    outline: none;
+}
+.inputField, .passwordField{
+    display: grid;
+    gap: 8px;
+}
+.formWrap{
+    display: grid;
+    gap: 20px;
+}
+.formWrap p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #5B5B5B;
+}
+.invalid{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #D23737;
+}
+.passwordField > div {
+    display: grid;
+    grid-template-columns: 1fr 35px;
+    align-items: center;
+    height: 50px;
+    border: 1px solid #C1C1C1;
+    box-sizing: border-box;
+    border-radius: 16px;
+    height: 50px;
+    padding-right: 17px;
+    width: 100%;
+}
+.passwordField > div:hover , .passwordField > div:active{
+    border: 1px solid #87D78B;
+}
+.inputField input:hover, .inputField input:active{
+    border: 1px solid #87D78B;
+}
+.passwordField img {
+    justify-self: end;
+}
+.passwordField input{
+    border: none;
+    height: 46px;
+    padding-left: 17px;
+    outline: none;
+    border-radius: 16px 0 0 16px;
+}
+.formWrap button{
+    background: #3C9C41;
+    height: 50px;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border-radius: 16px;
+}
+.formWrap button:hover{
+    background: #4DB252;
+}
+.formWrap button:active{
+    background: #318636;
+}
+@media screen and (min-width: 350px) {
+    .formWrap{
+        gap: 30px;
+    }
+  }
